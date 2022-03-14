@@ -1,4 +1,120 @@
-<html>
-  <a href = "../index.html"> TEST TO HOME </a>
-  Placeholder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  
+  
+<body>
+  <h1> </h1>
+   
+    
+    
+    <div class="grid-container">
+  <div class="item1">
+    Finals Week
+    
+  </div>
+  <div class="item2"> 
+    <img src = "https://docs.google.com/drawings/d/e/2PACX-1vRSsJUfbcPocszyboVgRtDmFjyg-IXMJoUqln464ZYbuEvtadoKgx417bMc3hfg6P6TY8iR2hwOYNgm/pub?w=960&amp;h=720">
+      
+      </div>
+  <div class="item3">
+    <div data-type="countdown" data-id="3123677" class="tickcounter" style="width: 100%; position: relative; padding-bottom: 25%"><a href="//www.tickcounter.com/countdown/3123677/my-countdown" title="My countdown">My countdown</a><a href="//www.tickcounter.com/" title="Countdown">Countdown</a></div><script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script>
+    
+  </div>  
+  <div class="item4">
+    <h2> Schedule: </h2>
+    <br>
+    March 20 - 25
+    <br>
+    Finals on March 24th and 25th
+  </div>
+  <div class="item5">
+    <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Tickets </a>
+    
+    
+  </div>
+</div>
+
+  
+  
+  
+  
+  
+  
+</body>
 </html>
+
+
+
+<style>
+  .container {
+  width: 90vw;
+  background-color: blue;
+  height: 95vh;
+  display: flex;
+  align-items : center;
+  justify-content: space-evenly;
+}
+
+body{
+  background-color: gray;
+} 
+h1{
+  text-align: center;
+}
+
+
+
+
+.item1 { grid-area: A; }
+.item2 { grid-area: B; }
+.item3 { grid-area: C; }
+.item4 { grid-area: D; }
+.item5 { grid-area: E; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'A A A A A A '
+    'B C C C D D'
+    'B E E E E E';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: lightgreen;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+img {
+  width: 300px;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+  
+  .grid-container {
+  display: grid;
+  grid-template-areas:
+    'A A A A'
+    'B C C C'
+    'E E E E'
+    'D D D D';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+}
+
+</style>
