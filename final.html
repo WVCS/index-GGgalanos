@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="grid-container">
+  <div class="item1">The Admins</div>
+  <div class="item2">
+    <h4> Members: </h4> 
+    <br>
+    <h6> Lead Singer: Tina Ziegler <br>
+         Drums: Mr. Glover <br>
+         Guitar: Ms Parker <br>
+      Keyboard: Ms. Heard </h6>
+    
+    </h6>
+    
+    
+  </div>
+  <div class="item3">
+    <h5> Prices: <br> </h5> 
+    <h6> Regular Seating: $30 <br>
+         VIP Seating: $50 <br>
+          SPECIAL OFFER: $100- Meet & Greet and picture opportunity
+    
+    
+  </div>  
+  <div class="item4"> 
+    <h5> Fan Mail Address: <br> </h5>
+         13500 Wolverine Way
+    <br>
+    <br>
+    <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Join Mailing List </a>
+    
+         
+    
+    </div>
+  <div class="item5"> "Amazing band. Their musical skills are absolutely impeccable." - Ms. Neumann</div>
+    
+    
+    <div class = "item6"> 
+    <h4> Coming Soon to Westview High School!  <br> <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Westview_high_school_2.jpg/220px-Westview_high_school_2.jpg">
+    </div>
+</div>
+  
+  
+  
+  
+</body>
+</html>
+  
+  <style>
+    .item1 { grid-area: A; }
+.item2 { grid-area: B; }
+.item3 { grid-area: C; }
+.item4 { grid-area: D; }
+.item5 { grid-area: E; }
+.item6 { grid-area: F; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'A A A A A A'
+    'B C C C D D'
+    'B E E E E E'
+    'F F F F F F';
+  gap: 10px;
+  background-color: #00AFB9;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #92D5E6;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+body{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgbwznAmDmXNefFsn-_jh48b2KTOUkQC3pa0yFjsNpyhJqbniOXsaJTS4dJ4nNS3vrNTw:https://files.123freevectors.com/wp-content/original/145002-black-and-blue-lights-background-vector-illustration.jpg&usqp=CAU);
+}
+
+
+
+@media only screen and (max-width: 1024px){
+  
+  .grid-container {
+  display: grid;
+  grid-template-areas:
+    'A A A A'
+    'B C C C'
+    'D D D D'
+    'E E E E'
+    'F F F F';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+}
+
+  
+  </style>
